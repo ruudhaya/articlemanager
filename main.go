@@ -4,7 +4,6 @@ package main
 
 import (
 	"github.com/gin-gonic/gin"
-	"net/http"
 	_ "net/http"
 )
 
@@ -19,18 +18,4 @@ func main() {
 	initializeRoutes()
 
 	router.Run()
-}
-
-func initializeRoutes() {
-	router.GET("/", showIndexPage)
-}
-
-func showIndexPage(context *gin.Context) {
-	context.HTML(
-		http.StatusOK,
-		"index.html",
-		gin.H{
-			"title": "Home Page",
-		},
-	)
 }

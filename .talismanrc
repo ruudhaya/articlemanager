@@ -1,0 +1,4 @@
+fileignoreconfig:
+- filename: templates/header.html
+  checksum: c430fd5ac6199e1a4994acebe1508e0ce7207c9f8268183d6e5647da9ee6992b
+  ignore_detectors: []

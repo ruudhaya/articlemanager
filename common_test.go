@@ -19,7 +19,7 @@ func TestMain(m *testing.M) {
 	os.Exit(m.Run())
 }
 
-func getRouter(withTemplates bool) *gin.Engine {
+func GetRouter(withTemplates bool) *gin.Engine {
 	r := gin.Default()
 
 	if withTemplates {

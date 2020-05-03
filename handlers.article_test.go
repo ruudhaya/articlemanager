@@ -11,7 +11,7 @@ import (
 
 // Test that GET request to the Home page returns home page with HTTP Code 200 for an unauthenticated user
 func TestShowIndexPageUnauthenticated(t *testing.T) {
-	r := getRouter(true)
+	r := GetRouter(true)
 
 	r.GET("/", showIndexPage)
 
