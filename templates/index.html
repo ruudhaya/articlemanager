@@ -1,0 +1,13 @@
+<!-- index.html -->
+
+{{ template "header.html" . }}
+
+<h1> Articles </h1>
+
+{{ range .payload }}
+    <a href="article/view/{{.ID}}">
+        <h2>{{ .Title }}</h2>
+    </a>
+    <p>{{ .Content }}</p>
+{{ end }}
+{{ template "footer.html" . }}
